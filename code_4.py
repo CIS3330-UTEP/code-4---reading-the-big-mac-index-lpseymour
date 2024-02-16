@@ -39,7 +39,7 @@ def get_the_most_expensive_big_mac_price_by_year(year):
     country_code = countrycode_df.loc[max_idx]['iso_a3']
     dollar_price = countrycode_df.loc[max_idx]['dollar_price']
 
-    return f"{country_name}([{country_code}]): ${round(dollar_price,  2)}"
+    return f"{country_name}({country_code}): ${round(dollar_price,  2)}"
 
 if __name__ == "__main__":
     print(2019, 'arg', get_big_mac_price_by_year(2019, 'arg'))
